@@ -225,6 +225,10 @@ Configurar CLion para usar MSVC: El proceso es similar al anterior, pero debes c
 Comparar compiladores: Haz una copia de tu proyecto y configúralo para usar un compilador diferente. Observa si hay diferencias en el rendimiento o los errores al compilar y ejecutar tu programa.
 Enlazador
 
+## ejercicio 6
+El compilador de visual estududio da error
+
+
 Biblioteca estándar de C++: Tu programa ya está utilizando la biblioteca estándar de C++ si estás utilizando std::cout, std::cin, std::endl, etc. El enlazador puede encontrar estas funciones porque las bibliotecas estándar de C++ se instalan con el compilador.
 Biblioteca externa: Supongamos que quieres usar la biblioteca fmt en tu proyecto. Agregarías las líneas correspondientes a tu archivo CMakeLists.txt, como se describió en el ejercicio 3b. El enlazador puede encontrar la biblioteca fmt porque has configurado tu proyecto para descargarla y compilarla.
 Orden de enlace: En tu archivo CMakeLists.txt, la línea target_link_libraries determina el orden en que las bibliotecas se enlazan a tu programa. Si tienes problemas de enlace, puedes intentar cambiar el orden de las bibliotecas.
